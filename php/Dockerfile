@@ -39,7 +39,7 @@ RUN composer dump-autoload --optimize
 # This stage is meant to be target-built into a separate image
 # https://docs.docker.com/develop/develop-images/multistage-build/#stop-at-a-specific-build-stage
 # https://docs.docker.com/compose/compose-file/#target
-FROM app as app_dev
+#FROM app as app_dev
 
 # Xdebug has different modes / functionalities. We can default to 'off' and set to 'debug'
 # when we run docker compose up if we need it
